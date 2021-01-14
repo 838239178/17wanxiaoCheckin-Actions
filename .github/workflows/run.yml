@@ -19,6 +19,11 @@ jobs:
       run: |
         sudo apt update && \
         sudo apt install python3
+    
+    - name: freeze
+      run: |
+        pip freeze > requirements.txt
+        cat requirments.txt
       
     - name: Pip
       run: |
