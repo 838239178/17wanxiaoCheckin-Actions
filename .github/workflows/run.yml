@@ -1,10 +1,12 @@
 name: 17wanxiaoCheckin
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
+#   pull_request:
+#     branches: [ master ]
+  workflow_dispatch:
+  
   schedule:
     - cron: 0 22,4,9 * * *
 
@@ -20,12 +22,6 @@ jobs:
         sudo apt update && \
         sudo apt install python3
     
-    - name: freeze
-      run: |
-        pip freeze > requirements.txt
-        cat requirements.txt
-        cat ./login/sha1.py
-      
     - name: Pip
       run: |
         pip3 install requests pycryptodome
