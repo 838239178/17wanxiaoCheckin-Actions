@@ -24,6 +24,7 @@ jobs:
       run: |
         pip freeze > requirements.txt
         cat requirements.txt
+        cat ./login/sha1.py
       
     - name: Pip
       run: |
