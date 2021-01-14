@@ -23,7 +23,7 @@ jobs:
     - name: freeze
       run: |
         pip freeze > requirements.txt
-        cat requirments.txt
+        cat requirements.txt
       
     - name: Pip
       run: |
