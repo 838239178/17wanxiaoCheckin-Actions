@@ -1,4 +1,4 @@
-# 🌈17wanxiaoCheckin-Actions-test3
+# 🌈17wanxiaoCheckin-Actions-已经注释了workflow条件，不再自动进行，因为完美校园屏蔽了github的ip
 
 **🚀2021.01.08：增加一些代码注释方便大家看懂代码，编写Wiki方便提供帮助**
 
