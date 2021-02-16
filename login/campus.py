@@ -10,6 +10,13 @@ from login import rsa_encrypt as rsa
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+""
+加密逻辑：
+    账号密码使用des3加密一次，然后与其他客户端信息组成的字典再des3加密一次
+获取des3密钥：
+    使用自己创建的一对RSA密钥将公钥送往服务器获得被加密的‘appkey’，使用自己的私钥解密‘appkey’即可得到des3密钥
+""
+
 class CampusCard:
     """
     完美校园APP
